@@ -2,6 +2,10 @@
 
 # Exit immediately if a command exits with a non-zero status.
 set -e
+CP=$(cd "$(dirname "$0")" && pwd)
+echo $CP
+sleep 5
+
 SCRIPT_DIR=$(cd "$(dirname "$0")" && pwd)
 PROJECT_DIR="$PWD"
 COMMANDS="${SCRIPT_DIR}"
