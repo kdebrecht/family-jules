@@ -19,7 +19,7 @@ NPM_FULL_INSTALL=1
 ### 1
 # Full Environment
 #
-sudo -E bash "$COMMANDS/jules-install.sh"
+sudo -E bash "$COMMANDS/jules-full-install.sh"
 
 
 ### 2
