@@ -3,7 +3,9 @@
 # Actual Environment setup script to be pasted into Jules
 #
 
-. "./path.sh"
+SCRIPT_DIR=$(cd "$(dirname "$0")" && pwd)
+COMMANDS="${SCRIPT_DIR}/commands"
+
 . "$COMMANDS/permissions.sh"
 
 ### 1

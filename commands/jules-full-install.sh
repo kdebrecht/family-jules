@@ -2,20 +2,9 @@
 
 # Exit immediately if a command exits with a non-zero status.
 set -e
-
+SCRIPT_DIR=$(cd "$(dirname "$0")" && pwd)
 PROJECT_DIR="$PWD"
-PATH_FILE="family-jules-path.tmp"
-if [ -f "$PATH_FILE" ]; then
-  BASEPATH="$(< $PATH_FILE)"
-else
-  BASEPATH="$PWD/.family-jules"
-fi
-COMMANDS="$BASEPATH/commands"
-
-echo "PROJECT_DIR $PWD"
-echo "Base Path $BASEPATH"
-echo "Commands $COMMANDS"
-
+COMMANDS="${SCRIPT_DIR}/commands"
 
 ENV_FILE=".env"
 cp .env.example ${ENV_FILE}
