@@ -4,7 +4,7 @@
 set -e
 SCRIPT_DIR=$(cd "$(dirname "$0")" && pwd)
 PROJECT_DIR="$PWD"
-COMMANDS="${SCRIPT_DIR}/commands"
+COMMANDS="${SCRIPT_DIR}"
 
 ENV_FILE=".env"
 cp .env.example ${ENV_FILE}
