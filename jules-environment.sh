@@ -1,9 +1,10 @@
+#!/usr/bin/env bash
 ##########
 #
 # Actual Environment setup script to be pasted into Jules
 #
 
-SCRIPT_DIR=$(cd "$(dirname "$0")" && pwd)
+SCRIPT_DIR=$PWD/${CLONE_DIR}
 COMMANDS="${SCRIPT_DIR}/commands"
 
 . "$COMMANDS/permissions.sh"

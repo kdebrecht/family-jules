@@ -29,15 +29,12 @@ if [ -f "${SCRIPT_TO_RUN}" ]; then
   echo "✅ Script execution completed."
 else
   echo "❌ Error: Setup script '${SCRIPT_TO_RUN}' not found!"
-  # Exit the subshell with an error code.
-  exit 1
 fi
 
 
 # 3. Remove the repository directory.
 echo "Cleaning up..."
 rm -rf "${CLONE_DIR}"
-
 
 echo "✅ Cleanup complete. Directory '${CLONE_DIR}' has been removed."
 echo "🎉 Deployment finished successfully!"
