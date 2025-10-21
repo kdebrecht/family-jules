@@ -31,6 +31,10 @@ if [ ! -z "${NPM_FULL_INSTALL}" ]; then
     git restore package-lock.json
 fi
 
+if [-f "jules.log"]; then
+  cat "jules.log"
+fi
+
 ### 3
 # Test Env
 wget -O- http://localhost || cat storage/logs/laravel.log

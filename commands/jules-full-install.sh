@@ -44,6 +44,8 @@ echo "---------------------------------------------------------"
 composer install
 php artisan key:generate
 php artisan migrate
+sudo -u postgres psql -d "${DB_DATABASE}" -c "\dt"
+sudo -u postgres psql -d "${TEST_DB_DATABASE}" -c "\dt"
 
 echo "✅ Laravel complete!"
 echo "---------------------------------------------------------"

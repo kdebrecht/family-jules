@@ -5,6 +5,12 @@ echo "PASSWORD: ${DB_PASSWORD}"
 echo "TEST DB: ${TEST_DB_DATABASE}"
 echo "DB_USERNAME: ${DB_USERNAME}"
 
+echo "DB: ${DB_DATABASE}" >> jules.log
+echo "PASSWORD: ${DB_PASSWORD}" >> jules.log
+echo "TEST DB: ${TEST_DB_DATABASE}" >> jules.log
+echo "DB_USERNAME: ${DB_USERNAME}" >> jules.log
+
+
 #  Install and Configure PostgreSQL 17
 echo "Installing PostgreSQL 17..."
 sh -c 'echo "deb https://apt.postgresql.org/pub/repos/apt $(lsb_release -cs)-pgdg main" > /etc/apt/sources.list.d/pgdg.list'

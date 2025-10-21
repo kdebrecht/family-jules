@@ -5,8 +5,17 @@
 #  Setup Node
 #
 ###
-nvm install
-nvm use
+
+if [ -f ".nvmrc" ]; then
+  echo "Found .nvmrc file. Installing Node.js version from file..."
+  nvm install
+  nvm use
+else
+  echo "No .nvmrc file found. Installing the latest stable version of Node.js..."
+
+fi
+
+
 
 node -v
 

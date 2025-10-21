@@ -20,3 +20,7 @@ get_env() {
     # Return the found value. If the value is empty, return the default.
     echo "${value:-$default_value}"
 }
+
+echo_log() {
+  echo "$@" | sudo tee -a jules.log
+}
