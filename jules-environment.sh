@@ -1,4 +1,3 @@
-#!/usr/bin/env bash
 ##########
 #
 # Actual Environment setup script to be pasted into Jules
@@ -12,7 +11,7 @@ COMMANDS="${SCRIPT_DIR}/commands"
 ### 1
 # Setup Node
 #
-echo "NPM INSTALL VAR: $NPM_FULL_INSTALL"
+echo "NPM INSTALL VAR: ${1}"
 
 
 NPM_FULL_INSTALL=0 #(1=npm install, 0=npm ci)
