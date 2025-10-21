@@ -11,8 +11,6 @@ COMMANDS="${SCRIPT_DIR}/commands"
 ### 1
 # Setup Node
 #
-echo "NPM INSTALL VAR: ${1}"
-
 
 NPM_FULL_INSTALL=0 #(1=npm install, 0=npm ci)
 . "$COMMANDS/node.sh"
