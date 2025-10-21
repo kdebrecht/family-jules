@@ -8,6 +8,7 @@ BRANCH_NAME="alpha"
 CLONE_DIR=".family-jules"
 INSTALL_SCRIPT="jules-environment.sh"
 SCRIPT_TO_RUN="${CLONE_DIR}/${INSTALL_SCRIPT}"
+NPM_FULL_INSTALL=10
 
 git clone --branch "${BRANCH_NAME}" "${REPO_URL}" "${CLONE_DIR}"
 

@@ -12,7 +12,10 @@ COMMANDS="${SCRIPT_DIR}/commands"
 ### 1
 # Setup Node
 #
-NPM_FULL_INSTALL=1
+echo "NPM INSTALL VAR: $NPM_FULL_INSTALL"
+
+
+NPM_FULL_INSTALL=0 #(1=npm install, 0=npm ci)
 . "$COMMANDS/node.sh"
 
 
@@ -33,6 +36,7 @@ fi
 
 if [-f "jules.log"]; then
   cat "jules.log"
+  git restore jules.log
 fi
 
 show_git_diffs() {
