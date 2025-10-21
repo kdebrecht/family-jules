@@ -47,6 +47,8 @@ php artisan migrate
 sudo -u postgres psql -d "${DB_DATABASE}" -c "\dt"
 sudo -u postgres psql -d "${TEST_DB_DATABASE}" -c "\dt"
 
+show_git_diffs
+
 echo "✅ Laravel complete!"
 echo "---------------------------------------------------------"
 
