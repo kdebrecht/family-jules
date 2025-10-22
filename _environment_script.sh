@@ -14,4 +14,9 @@ git clone --branch "${BRANCH_NAME}" "${REPO_URL}" "${CLONE_DIR}"
 
 rm -rf "${CLONE_DIR}"
 
+# Reset Back
+# echo "If you have files that are modified you should address them in the install, but a last ditch simple answer is:"
+# git reset --hard
+
+
 echo "🎉 Deployment finished successfully!"

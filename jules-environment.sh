@@ -60,8 +60,15 @@ show_git_diffs() {
 }
 show_git_diffs
 
+WGET_ERROR=
+
 ### 3
 # Test Env
-wget -O- http://localhost || cat storage/logs/laravel.log
+wget -q -O- http://localhost || WGET_ERROR="WGET Failed"
 
+if [ -n "$WGET_ERROR" ]; then
+  cat storage/logs/laravel.log
+  echo "$WGET_ERROR" >&2
+  exit 1;
+fi
 
