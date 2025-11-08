@@ -22,7 +22,8 @@ sudo apt-get install -y \
     php${PHP_VERSION}-tokenizer \
     php${PHP_VERSION}-gd \
     php${PHP_VERSION}-intl \
-    php${PHP_VERSION}-xdebug
+    php${PHP_VERSION}-xdebug \
+    php${PHP_VERSION}-sqlite3
 
 # 3. Install Composer
 echo "Installing Composer..."

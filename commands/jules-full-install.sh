@@ -23,6 +23,7 @@ TEST_DB_DATABASE=$(get_env "TEST_DB_DATABASE" "testing" )
 DB_USERNAME=$(get_env "DB_USERNAME" "sail" )
 DB_PASSWORD=$(get_env "DB_PASSWORD" "password" )
 PHP_VERSION=$(get_env "PHP_VERSION" "8.4" )
+APP_PORT=$(get_env "APP_PORT" "80")
 
 
 # Host Setup for DB access
