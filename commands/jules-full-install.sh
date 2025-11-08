@@ -14,12 +14,11 @@ ENV_FILE=".env"
 
 SOURCE_ENV=".env.jules"
 BACKUP_ENV=".env.example"
-if [-f "${SOURCE_ENV}"]; then
-  echo "Copying ${SOURCE_ENV}"
-  cp ${SOURCE_ENV} ${ENV_FILE}
-else
-  cp ${BACKUP_ENV} ${ENV_FILE}
-fi
+
+cp ${SOURCE_ENV} ${ENV_FILE}
+
+ls -lha
+
 
 chmod 777 .env
 
