@@ -11,7 +11,15 @@ PROJECT_DIR="$PWD"
 COMMANDS="${SCRIPT_DIR}"
 
 ENV_FILE=".env"
-cp .env.example ${ENV_FILE}
+
+SOURCE_ENV=".env.jules"
+BACKUP_ENV=".env.example"
+if [-f "${SOURCE_ENV}"]; then
+  cp ${SOURCE_ENV} ${ENV_FILE}
+else
+  cp ${BACKUP_ENV} ${ENV_FILE}
+fi
+
 chmod 777 .env
 
 . "$COMMANDS/env-functions.sh"
